@@ -39,16 +39,16 @@ jobs:
 
 
       # MArche pas
-      # - name: Generate changelog
-      #   uses: janheinrichmerker/action-github-changelog-generator@v2.3
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-
-
       - name: Generate changelog
-        uses: charmixer/auto-changelog-action@v1
+        uses: janheinrichmerker/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+
+      # - name: Generate changelog
+      #   uses: charmixer/auto-changelog-action@v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: push changelog
