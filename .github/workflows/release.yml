@@ -37,10 +37,19 @@ jobs:
       #     release_version: ${{ steps.version.outputs.next-version }}
       #     config_file: .github/changelog-ci-config.yml
 
+
+      # MArche pas
+      # - name: Generate changelog
+      #   uses: janheinrichmerker/action-github-changelog-generator@v2.3
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+
+
       - name: Generate changelog
-        uses: janheinrichmerker/action-github-changelog-generator@v2.3
+        uses: charmixer/auto-changelog-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: push changelog
         uses: github-actions-x/commit@v2.9
