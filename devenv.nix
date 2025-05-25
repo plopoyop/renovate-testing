@@ -1,7 +1,11 @@
 { pkgs, lib, config, inputs, ... }:
 
 {
-  packages = [ pkgs.git ];
+  packages = [
+    pkgs.git
+    pkgs.go-task
+    pkgs.yamllint
+  ];
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;

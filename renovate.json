@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>plopoyop/renovate-config",
+    "github>plopoyop/renovate-config:kubernetes-ansible-collection"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["helm"],
+      "matchPackageNames": ["zammad"],
+      "registryUrls": ["https://zammad.github.io/zammad-helm"]
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^README.md$"
+      ],
+      "matchStrings": [
+        "zammad\\s*\\|\\s?v(?<currentValue>[0-9\\.]+)"
+      ],
+      "depNameTemplate": "zammad",
+      "autoReplaceStringTemplate": "zammad         | v{{newValue}}",
+      "datasourceTemplate": "helm"
+    }
+  ]
+}
