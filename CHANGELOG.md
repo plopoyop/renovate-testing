@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/plopoyop/renovate-testing/tree/HEAD)
+## [1.0.0](https://github.com/plopoyop/renovate-testing/tree/1.0.0) (2025-05-25)
 
-[Full Changelog](https://github.com/plopoyop/renovate-testing/compare/0.0.0...HEAD)
+[Full Changelog](https://github.com/plopoyop/renovate-testing/compare/0.0.0...1.0.0)
 
 ## ⚙️ Dependencies
 
