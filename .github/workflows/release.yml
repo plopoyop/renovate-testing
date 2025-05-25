@@ -38,10 +38,9 @@ jobs:
       #     config_file: .github/changelog-ci-config.yml
 
       - name: Generate changelog
-        uses: mikepenz/release-changelog-builder-action@v5
+        uses: janheinrichmerker/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          toTag: ${{ steps.version.outputs.next-version }}
 
       - name: push changelog
         uses: github-actions-x/commit@v2.9
