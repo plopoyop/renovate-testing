@@ -39,17 +39,18 @@ jobs:
 
 
       # MArche
-      # - name: Generate changelog
-      #   uses: janheinrichmerker/action-github-changelog-generator@v2.3
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-
-
       - name: Generate changelog
-        uses: mikepenz/release-changelog-builder-action@v5
+        uses: janheinrichmerker/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          configuration: github/changelog-config.json
+          configureSections: '{"features": {"prefix":"## 🚀 New Features","labels":["feature", "enhancement", "improvements"]}, "bugs": {"prefix":"## 🐛 Bug Fixes","labels":["fix", "bug", "bugfix"]}, "tests": {"prefix":"## 🧪 Tests","labels":["test"]}, "documentation": {"prefix":"## 📖 Documentation Updates","labels":["docs", "documentation", "doc"]}, "dependency": {"prefix":"## ⚙️ Dependencies","labels":["dependency"]}}'
+
+#     need tag
+      # - name: Generate changelog
+      #   uses: mikepenz/release-changelog-builder-action@v5
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     configuration: github/changelog-config.json
 
       # - name: Generate changelog
       #   uses: charmixer/auto-changelog-action@v1
