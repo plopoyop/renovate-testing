@@ -6,16 +6,22 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["helm"],
-      "matchPackageNames": ["zammad"],
-      "registryUrls": ["https://zammad.github.io/zammad-helm"]
+      "matchDatasources": [
+        "helm"
+      ],
+      "matchPackageNames": [
+        "zammad"
+      ],
+      "registryUrls": [
+        "https://zammad.github.io/zammad-helm"
+      ]
     }
   ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^README.md$"
+      "managerFilePatterns": [
+        "/^README.md$/"
       ],
       "matchStrings": [
         "zammad\\s*\\|\\s?v(?<currentValue>[0-9\\.]+)"
