@@ -30,12 +30,18 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
+      # - name: Generate changelog
+      #   uses: saadmk11/changelog-ci@v1.1.2
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     release_version: ${{ steps.version.outputs.next-version }}
+      #     config_file: .github/changelog-ci-config.yml
+
       - name: Generate changelog
-        uses: saadmk11/changelog-ci@v1.1.2
+        uses: mikepenz/release-changelog-builder-action@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          release_version: ${{ steps.version.outputs.next-version }}
-          config_file: .github/changelog-ci-config.yml
+          toTag: ${{ steps.version.outputs.next-version }}
 
       - name: push changelog
         uses: github-actions-x/commit@v2.9
