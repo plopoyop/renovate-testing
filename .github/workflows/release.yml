@@ -35,6 +35,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release_version: ${{ steps.version.outputs.next-version }}
+          config_file: .github/changelog-ci-config.yml
 
       - name: push changelog
         uses: github-actions-x/commit@v2.9
