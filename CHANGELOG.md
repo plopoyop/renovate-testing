@@ -4,6 +4,12 @@
 
 [Full Changelog](https://github.com/plopoyop/renovate-testing/compare/0.0.0...HEAD)
 
+## ⚙️ Dependencies
+
+- feat\(ci\)!: Update ubuntu \(22.04 → 24.04\) [\#3](https://github.com/plopoyop/renovate-testing/pull/3) ([plopoyop](https://github.com/plopoyop))
+- feat\(helm\): update chart zammad \(13.0.0 → 13.2.0\) [\#2](https://github.com/plopoyop/renovate-testing/pull/2) ([plopoyop](https://github.com/plopoyop))
+- fix\(ci\): update renovatebot/github-action action \(v42.0.0 → v42.0.3\) [\#1](https://github.com/plopoyop/renovate-testing/pull/1) ([plopoyop](https://github.com/plopoyop))
+
 **Closed issues:**
 
 - :robot: Renovate Dashboard [\#6](https://github.com/plopoyop/renovate-testing/issues/6)
@@ -11,9 +17,6 @@
 **Merged pull requests:**
 
 - chore\(config\): migrate renovate config [\#5](https://github.com/plopoyop/renovate-testing/pull/5) ([plopoyop](https://github.com/plopoyop))
-- feat\(ci\)!: Update ubuntu \(22.04 → 24.04\) [\#3](https://github.com/plopoyop/renovate-testing/pull/3) ([plopoyop](https://github.com/plopoyop))
-- feat\(helm\): update chart zammad \(13.0.0 → 13.2.0\) [\#2](https://github.com/plopoyop/renovate-testing/pull/2) ([plopoyop](https://github.com/plopoyop))
-- fix\(ci\): update renovatebot/github-action action \(v42.0.0 → v42.0.3\) [\#1](https://github.com/plopoyop/renovate-testing/pull/1) ([plopoyop](https://github.com/plopoyop))
 
 ## [0.0.0](https://github.com/plopoyop/renovate-testing/tree/0.0.0) (2025-05-25)
 
