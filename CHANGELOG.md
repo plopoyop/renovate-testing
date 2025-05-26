@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/plopoyop/renovate-testing/tree/2.0.0) (2025-05-26)
+
+[Full Changelog](https://github.com/plopoyop/renovate-testing/compare/1.0.0...2.0.0)
+
+## ⚙️ Dependencies
+
+- feat\(helm\)!: Update chart zammad \(13.0.0 → 14.1.2\) [\#4](https://github.com/plopoyop/renovate-testing/pull/4) ([plopoyop](https://github.com/plopoyop))
+
 ## [1.0.0](https://github.com/plopoyop/renovate-testing/tree/1.0.0) (2025-05-25)
 
 [Full Changelog](https://github.com/plopoyop/renovate-testing/compare/0.0.0...1.0.0)
