@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.0](https://github.com/plopoyop/renovate-testing/tree/2.1.0) (2025-05-26)
+
+[Full Changelog](https://github.com/plopoyop/renovate-testing/compare/2.0.0...2.1.0)
+
+## ⚙️ Dependencies
+
+- feat\(ci\): update janheinrichmerker/action-github-changelog-generator action \(v2.3 → v2.4\) [\#8](https://github.com/plopoyop/renovate-testing/pull/8) ([plopoyop](https://github.com/plopoyop))
+- fix\(ci\): update renovatebot/github-action action \(v42.0.3 → v42.0.4\) [\#7](https://github.com/plopoyop/renovate-testing/pull/7) ([plopoyop](https://github.com/plopoyop))
+
 ## [2.0.0](https://github.com/plopoyop/renovate-testing/tree/2.0.0) (2025-05-26)
 
 [Full Changelog](https://github.com/plopoyop/renovate-testing/compare/1.0.0...2.0.0)
